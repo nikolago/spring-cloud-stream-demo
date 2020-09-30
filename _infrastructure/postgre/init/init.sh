@@ -10,6 +10,6 @@ create_db_user_pass() {
     psql --username "$POSTGRES_USER" --dbname "$1" -c "CREATE EXTENSION IF NOT EXISTS pgcrypto"
 }
 
-create_db_user_pass demo_db demo_user demo_password
-
+create_db_user_pass order_service_db order_service_user order_service_password
+create_db_user_pass shipment_service_db shipment_service_user shipment_service_password
 
